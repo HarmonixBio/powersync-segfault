@@ -1,22 +1,12 @@
 # powersync_segfault
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Minimal replication of powersync segfault issue. The code runs correctly locally but causes a segfault when run in github actions with macos-latest.
 
 
+## Running code locally
 
-asdf install
+```shell
+asdf install # optional - installs flutter 3.22.2
 dart ./scripts/init_powersync_core_binary.dart
 flutter test --dart-define SQLITE_BIN=$(which sqlite3)
+```
