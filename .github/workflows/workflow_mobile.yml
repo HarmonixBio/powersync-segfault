@@ -3,7 +3,7 @@ name: Mobile tests
 on:
   push:
     paths:
-      - components/mobile/**
+      - test/**
       - .github/workflows/workflow_mobile.yml
 
 jobs:
